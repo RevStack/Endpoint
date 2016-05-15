@@ -1,0 +1,19 @@
+{
+  "name": "RevStack.Endpoint",
+  "version": "1.0.0",
+  "description": "Odata queryable api endpoints for generic services",
+  "main": "RevStack.Endpoint.sln",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RevStack/Endpoint.git"
+  },
+  "author": "S. Francis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RevStack/Endpoint/issues"
+  },
+  "homepage": "https://github.com/RevStack/Endpoint"
+}
