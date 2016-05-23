@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Web.Http;
-using System.Web.OData.Query;
-using System.Web.OData;
-using System.Web.OData.Extensions;
 using RevStack.Pattern;
-using System.Collections.Generic;
-using System.Linq;
+
 
 namespace RevStack.Endpoint
 {
-    public class ODataBaseController<TEntity,TKey> : ApiController
+    public class ODataBaseController<TEntity,TKey> : ODataNavigationController<TEntity,TKey>
          where TEntity : class, IEntity<TKey>
     {
         protected IService<TEntity, TKey> _service;
@@ -66,12 +61,6 @@ namespace RevStack.Endpoint
             }
         }
 
-        protected PageResult<TEntity> PagedResult(IEnumerable<TEntity> result, ODataQueryOptions<TEntity> options)
-        {
-            ODataQuerySettings settings = new ODataQuerySettings() { };
-            IQueryable query = options.ApplyTo(result.AsQueryable(), settings);
-            return new PageResult<TEntity>(query as IQueryable<TEntity>, Request.ODataProperties().NextLink, Request.ODataProperties().TotalCount);
-        }
 
         public virtual TKey NewId
         {
