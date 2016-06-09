@@ -46,11 +46,17 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="RevStack.Mvc">
-      <HintPath>\\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Mvc\bin\Release\RevStack.Mvc.dll</HintPath>
+    <Reference Include="RevStack.Cryptography, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RevStack.Cryptography.1.0.0\lib\net46\RevStack.Cryptography.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="RevStack.Pattern">
-      <HintPath>\\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Pattern\RevStack.Pattern\bin\Release\RevStack.Pattern.dll</HintPath>
+    <Reference Include="RevStack.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RevStack.Mvc.1.0.1\lib\net46\RevStack.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RevStack.Pattern, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RevStack.Pattern.1.0.0\lib\net46\RevStack.Pattern.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
