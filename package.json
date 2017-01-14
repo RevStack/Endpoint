@@ -1,6 +1,6 @@
 {
   "name": "RevStack.Endpoint",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Odata queryable api endpoints for generic services",
   "main": "RevStack.Endpoint.sln",
   "scripts": {
